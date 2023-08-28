@@ -1,0 +1,21 @@
+what is cloud computing?
+Cloud Computing is the on-demand delivery of IT resources over the Internet with pay-as-you-go pricing. Instead of buying, owning, and maintaining physical data centers and 
+servers, you can use technology services, such as computing power, storage, and databases, on an as-needed basis from a cloud provider like Amazon Web Services.
+what are those IT resources?
+Application, Data, Runtime, Middleware, OS, Virtualization, Storage, Server, Networking
+AWS GLOBAL INFRASTRUCTURE:
+ # Regions 
+  #Availability Zones 
+    #Data centers
+      #Racks 
+        #Servers 
+  #Edge locations
+Regions :
+Generally, a  region has 2 to 5 availability zone 
+  AWS Region is an isolated geographical location with availability zones(2 to 5) that are mapped to data centers.
+  Each region is physically isolated and operates independent of each other region. 
+Availability zone :
+  Availability zone is an isolated location within a region
+  Availability zone with in a region are connected through Low-latency links...
+AWS has 102 Availability zones and 32 Geographical regions..
+  
