@@ -1,0 +1,30 @@
+Scenario Based Practice Question For IAM Role.
+Problem Statement: You are tasked with setting up and configuring AWS Identity and Access Management (IAM) for a new web application that your company is developing. The goal is to ensure that the AWS environment is secure, and that users, roles, and policies are appropriately allocated to meet the specific requirements of the application.
+
+This is how i approach this problem.
+ Created Two User Groups
+ Developers
+ Operators
+ Attached some policies to developer that allow developer to do their task from their aws user account.
+ Ec2 full access
+ Rds full access
+ Route 53 full access
+ SQS full access
+ Cloudformation full access
+ Code build full access
+ Code commit full access
+ Code deployer full access
+ Lambda function full access
+ Attached some policies to operators that will allow them to see logs, metrics, resources configuration and other information.
+ Ec2 read only
+ Rds read only
+ Route 53 read only
+ Sqs read only
+ Cloud watch access
+ Then i created three users.
+ Alice - developer
+ Charlie - developer
+ Bob - Operator
+ Then i created IAM role for ec2 instance named WebAppEC2Role
+ This role ensures that ec2 instance will have enough permission to access other aws services that developer will need from his aws account.
+
