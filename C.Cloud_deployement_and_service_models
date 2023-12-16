@@ -1,0 +1,19 @@
+https://camo.githubusercontent.com/82dc853c6b7cd4acbddba29a5c2f531094cfb798f2d570758a5530f6e4facbe9/68747470733a2f2f626c6f67732e626d632e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031372f30392f696161732d706161732d736161732d636f6d70617269736f6e2d31303234783735392e6a7067
+
+What is a Cloud?
+Cloud is  a ondemand delivery of IT services including Applications,data,runtime,middleware,os,virtualization,storage,servers,networking over the internet 
+
+Cloud service models:
+**Infrstructure as a service: 
+   --Applications, data,runtime,middleware,os are managed by the user 
+   -- Remaining all are managed by the cloud provider
+   -- Examples are AWS,Azure,Gcp
+**platform as a service:
+   --Applications,data are managed by the user
+   --Remaining all are managed by the cloud provider
+   --Examples are 
+**Software as a service:
+   --All Services are hosted and  managed by the cloud provider
+   --Examples are 
+
+
