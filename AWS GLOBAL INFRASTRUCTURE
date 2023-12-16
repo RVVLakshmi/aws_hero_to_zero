@@ -1,0 +1,7 @@
+what is a datacenter?
+A data center is a physical location that stores computing machines and their related hardware equipment.
+What is an availability zones?
+An Availability Zone is a public cloud providers data centre that has its own network connectivity and power. There are multiple Availability Zones in a region. An availability Zone is a single data center or group of data centers in a region.
+What is a Region ?
+regions are geographical locations worldwide where the data centres owned  by public cloud providers reside.region has multiple availability zones in it.each region is isolated and independent from every other region.
+AWS Edge Locations: These are mini data center's that are available across all the cities in the world. Edge Locations are situated separately  from main regions in a cloud network.They store copies of stuff– videos, music, and more. When user want something, AWS grabs it from the nearest pit stop, and deliver the content faster.
