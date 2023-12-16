@@ -1,0 +1,18 @@
+Virtualization : -means creating a virtual version of something(desktop,server,storage,network)
+                 It is a technique that allows to share simgle physical instance or resource among multiple organizations or customers.
+                 All virtual servers will work independently
+Host Machine: It is a machine on which virtual machine is going to be build
+Guest Machine:It is  a created virtual machine.
+Hyperviser: It is a software that creates and runs the virtual machines.
+            It is used to create virtualization on physical machines
+2 main types of virtualization
+Type 1:Native/bare metal virtualization
+        In Type 1 virtualization (bare-metal virtualization), the hypervisor is installed directly on the physical hardware of the host machine, without requiring an underlying operating system.
+Type 2:Hosted virtualization 
+        In Type 2 virtualization, the hypervisor is installed on top of an existing operating system, which means it's not directly interacting with the physical hardware. 
+
+In aws, softwares used for hypervisor are "xen" and "Nitro". 
+Xen is used for old machine type families like t2 micro family
+Nitro is used for latest instance types
+
+
