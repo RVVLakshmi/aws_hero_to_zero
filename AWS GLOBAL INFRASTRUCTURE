@@ -5,3 +5,4 @@ An Availability Zone is a public cloud providers data centre that has its own ne
 What is a Region ?
 regions are geographical locations worldwide where the data centres owned  by public cloud providers reside.region has multiple availability zones in it.each region is isolated and independent from every other region.
 AWS Edge Locations: These are mini data center's that are available across all the cities in the world. Edge Locations are situated separately  from main regions in a cloud network.They store copies of stuff– videos, music, and more. When user want something, AWS grabs it from the nearest pit stop, and deliver the content faster.
+Local zones:Local Zones provide you the ability to place resources, such as compute and storage, in multiple locations closer to your end users.
