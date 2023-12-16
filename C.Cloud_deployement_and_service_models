@@ -11,9 +11,8 @@ Cloud service models:
 **platform as a service:
    --Applications,data are managed by the user
    --Remaining all are managed by the cloud provider
-   --Examples are 
+   --Examples are Google app engine,redshift open shift,windows azure
 **Software as a service:
    --All Services are hosted and  managed by the cloud provider
-   --Examples are 
-
+   --Examples are Salesforce,zoom,dropbox
 
