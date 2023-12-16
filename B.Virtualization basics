@@ -15,4 +15,10 @@ In aws, softwares used for hypervisor are "xen" and "Nitro".
 Xen is used for old machine type families like t2 micro family
 Nitro is used for latest instance types
 
+**Benefits of Virtualization**
+-lowers the cost of It Infrastructure
+-Remote access
+-Better resource utilization
+-pay per use of IT infrastructure on demand
+
 
