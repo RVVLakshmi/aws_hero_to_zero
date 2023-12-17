@@ -1,18 +1,38 @@
 https://camo.githubusercontent.com/82dc853c6b7cd4acbddba29a5c2f531094cfb798f2d570758a5530f6e4facbe9/68747470733a2f2f626c6f67732e626d632e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031372f30392f696161732d706161732d736161732d636f6d70617269736f6e2d31303234783735392e6a7067
 
 What is a Cloud?
-Cloud is  a ondemand delivery of IT services including Applications,data,runtime,middleware,os,virtualization,storage,servers,networking over the internet 
+Cloud is  an on-demand delivery of IT services including Applications, data, runtime, middleware, OS, virtualization, storage, servers, networking over the internet 
 
 Cloud service models:
-**Infrstructure as a service: 
-   --Applications, data,runtime,middleware,os are managed by the user 
+**Infrastructure as a service: 
+   --Applications, data, runtime, middleware, os are managed by the user 
    -- Remaining all are managed by the cloud provider
-   -- Examples are AWS,Azure,Gcp
-**platform as a service:
-   --Applications,data are managed by the user
+   -- Examples are AWS, Azure, GCP
+**Platform as a service:
+   --Applications and data are managed by the user
    --Remaining all are managed by the cloud provider
-   --Examples are Google app engine,redshift open shift,windows azure
+   --Examples are the Google app engine, Redshift Open Shift, Windows Azure
 **Software as a service:
    --All Services are hosted and  managed by the cloud provider
-   --Examples are Salesforce,zoom,dropbox
+   --Examples are Salesforce, zoom, dropbox
+***Cloud Deployment Models**
+-public cloud: The public cloud allows everyone can access the resources with the help of an internet connection
+-private cloud: in the private cloud, resources, and services are only accessed and used within the organization
+-community cloud: - resources are accessed by a group of organizations.
+-Hybrid cloud: It is the combination of both private and public clouds. (Critical activities are performed in private cloud, and non-critical activities are performed in public cloud)
+
+*****key points*****
+
+Reliability :Reliability means that the services and resources provided by the cloud are consistently available and operational without failure.
+            - cloud services are available consistently  and functioning without any failure(during normal conditions)
+Availability:Amount of time that a cloud resource is usable and accessible
+             High availability means cloud resource is available for a vast amount of time
+Fault tolerance:cloud services are able to keep working well even if a failure occurs.
+Disaster recovery is like having a backup plan for your data and systems in case disaster occurs
+Redundancy: Involves creating duplicate resources or systems within the cloud to ensure continued operation if one component fails. Redundancy helps enhance reliability and fault tolerance by providing backup systems or data centers that can take over if primary systems fail.
+SLA (Service Level Agreement): An agreement between a service provider and its customers that defines the expected level of service regarding reliability, availability, performance, and other aspects. SLAs often specify uptime percentages, response times, and compensation for service disruptions.
+
+
+
+     
 
