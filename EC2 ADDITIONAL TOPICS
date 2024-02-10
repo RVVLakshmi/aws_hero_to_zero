@@ -1,0 +1,112 @@
+ec2 user script:
+When launching an EC2 instance, there is an option to provide User Data. This can be done through the AWS Management Console, AWS CLI, or SDKs.
+The User Data script is executed when the instance starts up.
+For Linux instances, the script is typically a Bash script.
+For Windows instances, you might use PowerShell or other scripting languages.
+It is used to automate things such as installing updates, installing software, downloading open files from the internet, etc.
+
+
+bootstrapping means launching commands when a machine starts
+It refers to the steps taken during the initialization of an EC2 
+
+
+sample user data:
+
+#!/bin/bash
+
+yum update -y 
+yum install -y httpd 
+systemctl start httpd   # Corrected
+systemctl enable httpd  # Corrected
+echo "<h1>hello world from $(hostname -f)</h1>" > /var/www/html/index.html  
+
+
+m5.2large
+m  -instance class 
+5   -generation 
+2 large - size within the instance class 
+
+HTTP - 80 - access  unsecured websites
+HTTPS - 443 -access secured websites
+ssh - 22 -login to Linux 
+RDP -3389-login to windows
+FTP-21(file transfer protocol)-upload files  into file share
+sftp-22(secure file transfer protocol)-upload files using ssh 
+
+
+General purpose:
+General Purpose instances are designed to deliver a balance of compute, memory, and network resources. They are suitable for web servers,small databases,code repositories
+
+Compute Optimized instances provide a higher ratio of compute power to memory. They are suitable for batch-processing workloads, scientific modeling, machine learning, gaming servers
+
+Memory Optimized instances are designed to handle memory-intensive workloads. They are suitable for applications that require large amounts of memory, such as in-memory databases, and high-performance relational/nonrelational databases.
+
+Storage Optimized instances are optimized for applications that require high, sequential read and write access to large datasets on local storage. They are ideal for tasks like data warehousing, log processing, and distributed file systems.
+
+Accelerated Computing Instances typically come with one or more types of accelerators, such as Graphics Processing Units (GPUs),
+Field Programmable Gate Arrays (FPGAs)
+It enables faster and more efficient processing for specific workloads.
+
+
+a high-performance computing instance is like a supercharged computer designed for heavy-duty tasks. It has a powerful engine (processor), lots of space to work with (memory), and can quickly communicate with others (networking). This type of instance is used for big jobs that need a lot of computational power, like complex calculations, simulations, or data analysis
+
+Spot Instances on AWS allow users to get computing power at a lower cost by bidding for unused server capacity.
+
+
+ sg: It acts as a virtual firewall for your instances (virtual servers). It controls inbound and outbound traffic to and from these instances. 
+
+Vertical Scaling (Scaling Up):
+Horizontal Scaling (Scaling Out):
+
+
+dedicated hosts: book an entire physical server
+dedicated instances: no other customer will share ur hardware
+capacity reservation: capacity reservation in any specific AZ zone for any duration
+
+difference between ec2 and s3
+
+EC2 provides virtual servers (instances) in the cloud, allowing you to run applications, host websites, and perform various computing tasks.
+
+S3 is an object storage service designed for storing and retrieving any amount of data. It is suitable for storing and archiving data, backups, and serving static website content.
+
+Instance metadata provides information about an instance, such as instance ID, public and private IP addresses, instance type, security group, and more. It can be accessed from within the instance to retrieve configuration details.
+
+ Use Cases of Security Groups:
+Web Servers: Restrict inbound traffic to ports 80 and 443 for web servers.
+Database Servers: Allow only specific IP addresses or security groups to connect to database ports (e.g., 3306 for MySQL).
+Application Servers: Define rules for application-specific ports based on your application's requirements.
+Multitier Architectures: Control traffic flow between different tiers (e.g., web tier, application tier, and database tier).
+
+How can you configure auto-recovery for an EC2 instance?
+Auto-Recovery in Amazon EC2 is a feature that automatically replaces an impaired EC2 instance with a new one in the same availability zone when the instance status check fails.
+Navigate to EC2 Dashboard:
+
+Open the Amazon EC2 Console.
+Select the Instance:
+
+In the left navigation pane, select "Instances."
+Choose the Instance:
+
+Select the EC2 instance for which you want to configure Auto-Recovery.
+Enable Auto-Recovery:
+
+In the details pane at the bottom, choose the "Actions" dropdown.
+Under "Instance Settings," select "Change Auto Recovery Settings."
+Configure Auto-Recovery:
+
+In the "Change Auto Recovery Actions" dialog, check the box next to "Enable" to enable Auto-Recovery.
+Optionally, you can specify a "Time to Wait" before the instance is considered impaired and Auto-Recovery is triggered. The default is 5 minutes.
+Save Changes:
+
+Click the "Save" button to apply the changes.
+
+
+EC2 Placement Groups are a valuable feature for optimizing the placement of instances based on specific performance and communication requirements.
+
+
+EC2 Systems Manager (SSM) is like a helpful tool for easily managing and controlling your virtual servers (EC2 instances) on AWS. It helps automate tasks, keep your servers up to date, manage configurations, and ensures everything runs smoothly without needing direct access to each server.
+
+
+The AWS Systems Manager Agent (SSM Agent) is a software component installed on Amazon EC2SSM Agent acts as a bridge between EC2 instances and AWS Systems Manager. It allows instances to send information about their state and receive commands from Systems Manager services. instances to enable seamless communication between those instances and AWS Systems Manager services.
+
+
