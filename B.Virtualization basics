@@ -1,6 +1,7 @@
 Virtualization : -means creating a virtual version of something(desktop,server,storage,network)
                  It is a technique that allows to share simgle physical instance or resource among multiple organizations or customers.
                  All virtual servers will work independently
+                 It allows u to create multiple instances from single physical instance.
 Host Machine: It is a machine on which virtual machine is going to be build
 Guest Machine:It is  a created virtual machine.
 Hyperviser: It is a software that creates and runs the virtual machines.
